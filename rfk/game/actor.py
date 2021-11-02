@@ -19,6 +19,7 @@ class Actor:
         """The class constructor."""
         self._description = ""
         self._text = ""
+        self._tag = ""
         self._position = Point(0, 0)
         self._velocity = Point(0, 0)
 
@@ -85,3 +86,6 @@ class Actor:
             position (Point): The given velocity.
         """
         self._velocity = velocity
+
+    def set_tag(self, tag):
+        self._tag = tag
